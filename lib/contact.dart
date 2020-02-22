@@ -1,7 +1,8 @@
 import 'dart:ui';
 
 import 'package:Rajputana/Widgets/navigations.dart';
-import 'package:flutter/Material.dart';
+import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 // import 'package:webview_flutter/webview_flutter.darts';
 // import 'package:url_launcher/url_launcher.dart';
 
@@ -181,11 +182,11 @@ class ContactPageState extends State<ContactPage> {
                                  height:MediaQuery.of(context).size.height*0.55,
                                  width: MediaQuery.of(context).size.width*0.8,
                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(50)),
-                                //  child: WebView(
+                                 child: WebView(
                                    
-                                //    initialUrl:'https://rajputana01.netlify.com',
-                                //    javascriptMode: JavascriptMode.unrestricted,
-                                //  ),
+                                   initialUrl:'https://rajputana01.netlify.com',
+                                   javascriptMode: JavascriptMode.unrestricted,
+                                 ),
                                )
                               ],
                             ),
