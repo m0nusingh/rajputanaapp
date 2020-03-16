@@ -61,6 +61,7 @@ class HomePageState extends State<HomePage> {
   build(BuildContext c) {
 
     double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     
     return MaterialApp(
        theme: ThemeData(
@@ -122,7 +123,7 @@ class HomePageState extends State<HomePage> {
                
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.65,
+                height: MediaQuery.of(context).size.height * 0.75,
                
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -136,7 +137,7 @@ class HomePageState extends State<HomePage> {
                             },
                             child: Container(
                               alignment: new Alignment(0, 0),
-                              height: width*0.33,
+                              height: height*0.18,
                               width: width*0.33,
                               decoration: BoxDecoration(
                                   color: Color(0xff01498E),
@@ -147,7 +148,7 @@ class HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   Image.asset(
                                     'assets/images/info.png',
-                                    height: width*0.15,
+                                    height: height*0.08,
                                   ),
                                 ],
                               ),
@@ -159,7 +160,7 @@ class HomePageState extends State<HomePage> {
                             },
                             child: Container(
                               alignment: new Alignment(0, 0),
-                                height: width*0.33,
+                                height: height*0.18,
                               width: width*0.33,
                               decoration: BoxDecoration(
                                   color: Color(0xff01498E),
@@ -170,7 +171,7 @@ class HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   Image.asset(
                                     'assets/images/bars.png',
-                                    height: width*0.15,
+                                    height: height*0.08,
                                   ),
                                 ],
                               ),
@@ -186,7 +187,7 @@ class HomePageState extends State<HomePage> {
                             onTap: gotocalculator,
                             child: Container(
                               alignment: new Alignment(0, 0),
-                             height: width*0.33,
+                             height:height*0.18,
                               width: width*0.33,
                               decoration: BoxDecoration(
                                   color: Color(0xff01498E),
@@ -197,7 +198,7 @@ class HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   Image.asset(
                                     'assets/images/iconn/calc.png',
-                                    height: width*0.15,
+                                    height: height*0.08,
                                   ),
                                 ],
                               ),
@@ -207,7 +208,7 @@ class HomePageState extends State<HomePage> {
                             onTap: gotogrades,
                             child: Container(
                               alignment: new Alignment(0, 0),
-                               height: width*0.33,
+                               height: height*0.18,
                               width: width*0.33,
                               decoration: BoxDecoration(
                                   color: Color(0xff01498E),
@@ -218,7 +219,7 @@ class HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   Image.asset(
                                     'assets/images/iconn/grades.png',
-                                    height: width*0.15,
+                                    height: height*0.08,
                                   ),
                                 ],
                               ),
@@ -233,7 +234,7 @@ class HomePageState extends State<HomePage> {
                           onTap: gotogallery,
                           child: Container(
                             alignment: new Alignment(0, 0),
-                              height: width*0.33,
+                              height: height*0.18,
                             width: width*0.33,
                             decoration: BoxDecoration(
                                 color: Color(0xff01498E),
@@ -244,7 +245,7 @@ class HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Image.asset(
                                   'assets/images/iconn/gallery.png',
-                                  height: width*0.15,
+                                  height: height*0.08,
                                 ),
                               ],
                             ),
@@ -254,7 +255,7 @@ class HomePageState extends State<HomePage> {
                           onTap: gotocontact,
                           child: Container(
                             alignment: new Alignment(0, 0),
-                              height: width*0.33,
+                              height: height*0.18,
                             width: width*0.33,
                             decoration: BoxDecoration(
                                 color: Color(0xff01498E),
@@ -265,7 +266,7 @@ class HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Image.asset(
                                   'assets/images/iconn/contact.png',
-                                  height: width*0.15,
+                                  height: height*0.08,
                                 ),
                               ],
                             ),
@@ -277,7 +278,7 @@ class HomePageState extends State<HomePage> {
                      GestureDetector(
                         onTap: gotogetintouch,
                         child: new Container(
-                           height: width*0.13,
+                           height: height*0.08,
                           width: width*0.78,
                           alignment: new Alignment(0, 0),
                           decoration: BoxDecoration(
@@ -294,10 +295,7 @@ class HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              new Container(
-                height: MediaQuery.of(context).size.height * 0.1,
-              
-              ),
+             
             ],
           ),
         )),

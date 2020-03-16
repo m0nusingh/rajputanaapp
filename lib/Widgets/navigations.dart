@@ -111,9 +111,9 @@ class NavSate extends State<Navv> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Container(
-      height: height*0.75,
+      height: height*0.4,
       width: width * 0.1,
       decoration: BoxDecoration(
           color: Color(0xff01498E), borderRadius: BorderRadius.circular(7)),
@@ -122,27 +122,27 @@ class NavSate extends State<Navv> {
         children: <Widget>[
           Image.asset(
             'assets/images/logo2.png',
-            height: height * 0.08,
+            height:height*0.04,
           ),
            GestureDetector(
             onTap: gotohome,
             child: Image.asset(
               'assets/images/iconn/home.png',
-              height: height * 0.08,
+              height:height*0.04,
             ),
           ),
          (num!=1)? GestureDetector(
             onTap: gotoabout,
             child: Image.asset(
               'assets/images/info.png',
-              height: height * 0.08,
+              height:height*0.04,
             ),
           ):new Container(),
            (num!=3)? GestureDetector(
               onTap: gotocalc,
               child: Image.asset(
                 'assets/images/iconn/calc.png',
-                height: height * 0.08,
+                height:height*0.04,
               ),
             ):Container(color: Colors.pinkAccent,width: 0,height: 0,),
           
@@ -150,28 +150,28 @@ class NavSate extends State<Navv> {
             onTap: gotobars,
             child: Image.asset(
               'assets/images/bars.png',
-              height: height * 0.08,
+              height:height*0.04,
             ),
           ): Container(color: Colors.pinkAccent,width: 0,),
           (num!=5)?GestureDetector(
             onTap: gotogallery,
             child: Image.asset(
               'assets/images/iconn/gallery.png',
-              height: height * 0.08,
+              height:height*0.04,
             ),
           ):Container(width: 0,),
           (num!=6)?GestureDetector(
             onTap: gotogrades,
             child: Image.asset(
               'assets/images/iconn/grades.png',
-              height: height * 0.08,
+              height:height*0.04,
             ),
           ): Container(width: 0,),
           (num!=7)?GestureDetector(
             onTap: gotocontact,
             child: Image.asset(
               'assets/images/contact.png',
-              height: height * 0.08,
+              height:height*0.04,
             ),
           ): Container(width: 0,),
         ],
